@@ -1,0 +1,39 @@
+body{
+    background-color: peachpuff;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+.container{
+    width: 800px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+
+}
+div{
+    border: 3px solid;
+    border-color: white;
+}
+
+.top{
+    flex: 30%;
+    display: flex;
+}
+
+.botom{
+    flex: 70%;
+}
+.topright{
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.topleft{
+    flex: 50%;
+}
+.toprighttop{
+    flex: 50%;
+}
+.toprightbotom{
+    flex: 50%;
+}

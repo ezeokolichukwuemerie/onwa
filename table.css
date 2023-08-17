@@ -1,0 +1,20 @@
+ th, td {
+    border-style: outset;
+    border-color: bisque;
+    padding: 15px;
+    border-spacing: 50px;
+   /* padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;*/
+  }
+  tr:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+  }
+  
+  th:nth-child(even),td:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+  }
+  th, td{
+    text-align: center;
+  }

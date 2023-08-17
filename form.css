@@ -1,0 +1,21 @@
+body{
+    background-color: orange;
+}
+h1{
+   text-align: center;
+   color: royalblue;
+}
+form{
+    box-sizing: border-box;
+    border: 2px solid;
+    background-color: gold;
+    padding: 30px;   
+}
+label{
+    font-size: 20px;
+    color: red;
+}
+input{
+    height: 30px;
+    width: 500px;
+}

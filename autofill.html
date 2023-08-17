@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+ 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ 
+        .item1 {
+            background-color: aqua;
+            border: 1px solid black;
+            border-radius: 3px;
+            max-width: 100%;
+            min-height: 250px;
+            height: auto;
+        }
+ 
+        .item2 {
+            background-color: pink;
+            border: 1px solid black;
+            max-width: 100%;
+            border-radius: 3px;
+            min-height: 250px;
+            height: auto;
+        }
+ 
+        .set {
+            text-align: center;
+            margin-top: 10%;
+        }
+ 
+        .item3 {
+            background-color: green;
+            border: 1px solid black;
+            max-width: 100%;
+            border-radius: 3px;
+            min-height: 250px;
+            height: auto;
+        }
+ 
+        .item4 {
+            background-color: springgreen;
+            border: 1px solid black;
+            border-radius: 3px;
+            max-width: 100%;
+            min-height: 250px;
+            height: auto;
+        }
+ 
+        body {
+            height: 100vh;
+            place-items: center;
+            padding: 100px 0;
+        }
+ 
+        .autofill {
+            width: 90vw;
+            margin-top: 4%;
+            border-radius: 3px;
+            border: 1px solid rgb(22, 3, 3);
+            display: grid;
+ 
+            /* Use  display property as grid*/
+            gap: 5px;
+            grid-template-columns: repeat(
+                auto-fill, minmax(200px, 1fr));
+        }
+    </style>
+</head>
+ 
+<body>
+    <div class="autofill">
+        <div class="item1">
+            <h1 class="set">1</h1>
+        </div>
+        <div class="item2">
+            <h1 class="set">2</h1>
+        </div>
+        <div class="item3">
+            <h1 class="set">3</h1>
+        </div>
+        <div class="item4">
+            <h1 class="set">4</h1>
+        </div>
+    </div>
+</body>
+</html>

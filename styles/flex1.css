@@ -1,0 +1,17 @@
+body{
+    background-color: aquamarine;
+}
+.container{
+    width: 700px;
+    height: 500px;
+    border: 5px solid white;
+}
+.navbar{
+    margin-top: 30px;
+    width: auto;
+}
+.navbar{
+    background-color: blue;
+    display: flex;
+}
+.c

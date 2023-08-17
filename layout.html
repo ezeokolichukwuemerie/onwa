@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div{
+    display: inline;
+    gap: 30px;
+    border: 2px, solid;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 500px; /* only for demonstration, should be removed */
+  background: antiquewhite;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color:blue;
+  height: 500px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 50px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Holley Metering Limited</h2>
+  <img src="holley logo.jpg" alt="" style="width: 100px;">
+</header>
+
+<section>
+  <nav>
+    <ul>
+    <li><h3>Location</h3></li>
+      <li><a href="#">Port harcourt</a></li>
+      <li><a href="#">Abuja</a></li>
+      <li><a href="#">Kaduna</a></li>
+      <li><a href="#">Lagos</a></li>
+      <li><a href="#">ibadan</a></li>
+      <li><a href="#">benin</a></li>
+      <li><a href="#">Asaba</a></li>
+      <li><a href="#">Ekiti</a></li>
+      <li><a href="#">Ondo</a></li>
+      <li><a href="#">Warri</a></li>
+      <li><a href="#">Sapele</a></li>
+      <li><a href="#">Bayelsa</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Celdon Group</h1>
+    <p>A solution to the search for a Nigerian manufacturer and provider of top quality meters, metering products and systems. Supply of metering products and systems, setting up of an assembly and production lines in Nigeria, training of personnel both in China and Nigeria transferring Holley’s Superior metering technology to Nigerian Engineers.</p>
+    <p>A Building construction and Civil Engineering company registered to carry on the business of Engineering, Procurement and Construction of major infrastructures such as buildings, roads, refineries, oil and gas flow and measuring stations, thermal and Hydroelectric power plants, general engineering consultancy services, estate development and project management.</p>
+    <p>Celdon Technologies Limited (Partly owned by KIGGS LTD UK (Metering, Power Systems and Renewable Energy). A technology focused research and development (R&D) and manufacturing company engaged in Smart Metering products and systems for Electricity, Water and Gas Industry, Power Generation and Information Technology.</p>
+
+  </article>
+</section>
+
+<footer>
+  <div>home</div>
+  <div>about us</div>
+  <div>Our Partners</div>
+  <div>Metering</div>
+  <div>Construction</div>
+  <div><a href="malto:holley@celdongroup.com">Contact us</a></div>
+
+</footer>
+
+</body>
+</html>
